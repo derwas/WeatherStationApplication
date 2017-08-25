@@ -4,21 +4,21 @@ This project aims to collect data from a weather station and display it in a use
 
 #First iteration of a weather station project.
 
-###Mandatory
+### Mandatory
  	- JDK 8: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
  	- JRE 8: http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
  	- MongoDB 3.2.8: https://www.mongodb.com/download-center?jmp=nav#community
 
-###Optional
+### Optional
  	- Robomongo (great MongoDB UI) https://robomongo.org/download
  	- Integration to an IDE: https://www.playframework.com/documentation/2.5.x/IDE
 
-###Included
+### Included
  	- Java Play 2.5.3
  	- Mongo java driver 3.2.2
 
 
-##HOW TO RUN:
+## HOW TO RUN:
 
 1. Clone or unzip this repository
 2. Run MongoDB server
