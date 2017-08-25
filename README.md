@@ -1,4 +1,5 @@
 #Credit
+
 This project has been developped by Jeremy Michel as part of his internship in 2016 at the Insight Centre for Data Analytics under the supervision of Wassim Derguech.
 
 #First iteration of a weather station project.
