@@ -1,0 +1,184 @@
+/*d3*/
+svg {
+    display: block;
+}
+
+
+svg .axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+
+/*compass.js*/
+#compass{   
+    margin-left: 70px;
+}
+
+
+
+/*HEADER*/
+header#main {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: #000000;
+}
+
+
+
+header#main span.title {
+    color: #FFFFFF;
+    font-size: 3.5em;
+    text-align: center;
+    font-weight: bolder;
+    vertical-align: middle;
+    font-family: fantasy;
+}
+
+header#main span.subtitle {
+	color: #FFFFFF;
+	font-size: 0.9em;
+	text-align: center;
+	font-style: italic;
+}
+
+
+/*BODY*/
+
+
+#main-container {
+	padding-top: 50px;
+	background-color: #E9E9E9;
+}
+
+/*MODAL*/
+.modal-dialog {
+    width: 1060px!important;
+/*    margin: 30px auto;*/
+}
+
+
+/*panel css*/
+#buttonTemp {
+    position: relative;
+    margin-top: 30%;
+    float: right;
+}
+
+#buttonHum {
+    position: absolute;
+    margin: 0 0 0 0;
+    float: right;
+}
+
+#header-rowcol {
+	text-align: center;
+	font-size: 28px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+
+#panel-header-box {
+	background-color: #000000;
+}
+
+
+#rightColumn {
+	border-style: dashed;
+	border-width: 0;
+	border-left: 1;
+	border-left-width: 1px;
+}
+
+#dataHeader {
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.dataValue {
+    font-size: 40px;
+    text-align: center;
+}
+
+.timeValue {
+    font-size: 12px;
+    font-style: italic;
+    position: relative;
+    bottom: 4ex; 
+    font-size: 80%;
+}
+
+.timeValueHumi {
+    font-style: italic;
+    position: relative;
+    bottom: 1ex; 
+    font-size: 80%;
+}
+
+.panel {
+    border-color: #000000;
+    height: 500px;
+}
+
+.panel-body {
+    padding-bottom: 5px;
+}
+
+#humRightColumn {
+    text-align: right;
+}
+
+#humDataValue {
+    font-size: 15px;
+    color: #FF0000;
+}
+
+
+#windDataValue {
+    font-size: 15px;
+    color: #FF0000;
+}
+
+#rainDataValue {
+    font-size: 15px;
+    color: #FF0000;
+}
+
+
+.line {
+  stroke-width: 1;
+  fill: none;
+  clip-path: url(#clip);
+}
+
+.area {
+  clip-path: url(#clip);
+  stroke-width: 0;
+  opacity: 0.7;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+.tick line{
+  opacity: 0.2;
+}
+
+.legend rect {
+  fill:white;
+  stroke:black;
+  opacity:0.8;
+}

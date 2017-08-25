@@ -1,0 +1,91 @@
+					_________          _______    _______ _________ _______          _________         
+					\__   __/|\     /|(  ____ \   (       )\__   __/(  ____ \|\     /|\__   __/|\     /|
+					   ) (   | )   ( || (    \/   | () () |   ) (   | (    \/| )   ( |   ) (   ( \   / )
+					   | |   | (___) || (__       | || || |   | |   | |      | (___) |   | |    \ (_) / 
+					   | |   |  ___  ||  __)      | |(_)| |   | |   | | ____ |  ___  |   | |     \   /  
+					   | |   | (   ) || (         | |   | |   | |   | | \_  )| (   ) |   | |      ) (   
+					   | |   | )   ( || (____/\   | )   ( |___) (___| (___) || )   ( |   | |      | |   
+					   )_(   |/     \|(_______/   |/     \|\_______/(_______)|/     \|   )_(      \_/   
+
+
+
+
+					   	_________ _______  ______   _______    _       _________ _______ _________
+						\__   __/(  ___  )(  __  \ (  ___  )  ( \      \__   __/(  ____ \\__   __/
+						   ) (   | (   ) || (  \  )| (   ) |  | (         ) (   | (    \/   ) (   
+						   | |   | |   | || |   ) || |   | |  | |         | |   | (_____    | |   
+						   | |   | |   | || |   | || |   | |  | |         | |   (_____  )   | |   
+						   | |   | |   | || |   ) || |   | |  | |         | |         ) |   | |   
+						   | |   | (___) || (__/  )| (___) |  | (____/\___) (___/\____) |   | |   
+						   )_(   (_______)(______/ (_______)  (_______/\_______/\_______)   )_(   
+						                                                                          
+
+PRIORITY LIST
+- GRAPHS --> need checks of already done ones
+- WIDGETS --> need check of already done ones
+
+
+BLOG WRITING
+
+#===============================================#
+
+QUICK WS TEST
+https://www.playframework.com/documentation/2.5.x/JavaWebSockets#WebSockets
+
+#===============================================#
+
+WIDGET RAIN + AIR: [FRIDAY+SATURDAY]
+ - rectangle
+ - add gradient (look therm.js for example)
+ - up bar depending on the value
+ - set a fixed scale
+
+#===============================================#
+
+WIDGET WIND DIRSPEED [WEEK END SPAN]
+ - ROTATE NEEDLE + DISPLAY VALUE
+
+ FOR GRAPH WIND : 	http://bl.ocks.org/Andrew-Reid/a9b440b4ccb89dd2af96     <-- use this
+ 					http://forwardsprint.com/creating-a-beautiful-wind-rose-chart-using-d3-js/     <-- and maybe this
+
+#===============================================#
+
+ AUTHENTIFICATION (how the fuck do i do this ?)
+ - CHOICE
+ 	- first big choice: WEBSOCKETS
+ 		- powerful, but long to set up
+ 	- second big choice: REDIRECTION
+ 		- easy to set up
+ 		- will force refresh (may be annoying)
+- WHERE TO STORE USER DATA AND HOW
+	- some sort of database ?
+	- dunno, really
+
+Once this is solved, server impl + cl impl needed:
+ - server: model to handle data logon form
+ - client: form linked to model
+ - client: log on area somewhere, outside of the welcome form
+ - client: admin features (????????????)
+
+#===============================================#
+
+CONFIGURATION PAGE (to configure stuff obv)
+- CLIENT
+	- sensor location
+	- sensor name
+	- w/e
+	- page on app start ? dunno
+- SERVER
+	- model to handle form
+	- store these data somewhere on a sub database maybe
+
+#===============================================#
+
+GET THE INTERNSHIP REPORT DONE [1-2 weeks needed ?]
+ - plan
+ - verify plan
+ - intro/ccl
+ - content
+
+
+
