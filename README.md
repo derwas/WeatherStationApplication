@@ -1,4 +1,4 @@
-#Credit
+# Credit
 
 This project aims to collect data from a weather station and display it in a user friendly manner. It has been developed by Jeremy Michel as part of his internship in 2016 at the Insight Centre for Data Analytics under the supervision of Wassim Derguech.
 
