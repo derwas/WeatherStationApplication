@@ -1,6 +1,6 @@
 # Credit
 
-This project aims to collect data from a weather station and display it in a user friendly manner. It has been developed by Jeremy Michel as part of his internship in 2016 at the Insight Centre for Data Analytics under the supervision of Wassim Derguech.
+This project aims to collect data from a weather station and display it in a user friendly manner. It has been developed initially by Jeremy Michel as part of his internship in 2016 then this branch has been udated by Hela Allani during her internship in 2018 under the supervision of Dr. Wassim Derguech.
 
 #First iteration of a weather station project.
 
@@ -24,5 +24,5 @@ This project aims to collect data from a weather station and display it in a use
 2. Run MongoDB server
 3. Go to root folderh
 4. Run the activator ("bin/activator run") with your console
-5. When all assets have been downloaded and the project is compiled, access http://localhost:9000/landing/generator on your web browser (Chrome works 100%, other browsers not tested). Tis will generate a database called "myDB", which contains random sets of data
-6. Access http://localhost:9000/landing when the data has been generated
+5. First of all this project requires data in mongoB that needs to be collected by https://github.com/derwas/OpenWeatherMapDataCollector
+6. When the data has been generated, access http://localhost:9000/landing 
