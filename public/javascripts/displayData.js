@@ -210,7 +210,6 @@ function displayWindSData(dataList) {
 	document.getElementById("windDataTimeWSCur").appendChild(document.createTextNode(currentDateF));
 	document.getElementById("windDataTimeWSMin").appendChild(document.createTextNode(minDateF));
 	document.getElementById("windDataTimeWSMax").appendChild(document.createTextNode(maxDateF));
-	document.getElementById("windDataValueWSAvg").appendChild(document.createTextNode(averageF));
 
 }
 
@@ -255,6 +254,5 @@ function displayWindDData(dataList) {
 	document.getElementById("windDataTimeWDCur").appendChild(document.createTextNode(currentDateF));
 	document.getElementById("windDataTimeWDMin").appendChild(document.createTextNode(minDateF));
 	document.getElementById("windDataTimeWDMax").appendChild(document.createTextNode(maxDateF));
-	document.getElementById("windDataValueWDAvg").appendChild(document.createTextNode(averageF));
 
 }

@@ -1,7 +1,7 @@
 //display thermometer
 function plotThermometer(dataList) {
-  var width = 180,
-      height = 380,
+  var width = 80,
+      height = 180,
       maxTemp = 0,
       minTemp = 0,
       currentTemp = dataList[5];
@@ -139,7 +139,7 @@ function plotThermometer(dataList) {
 
 
   // Values to use along the scale ticks up the thermometermeter
-  var tickValues = d3.range((domain[1] - domain[0])/5).map(function(v) { return domain[0] + v * 5; });
+  var tickValues = d3.range((domain[1] - domain[0])/10).map(function(v) { return domain[0] + v * 10; });
 
 
   // D3 axis object for the temperature scale

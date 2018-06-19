@@ -1,7 +1,187 @@
 /*d3*/
+
+
 svg {
-    display: block;
+display : block;
+height: 30%;
+
 }
+#cel {
+font-size: 15px;
+position: relative;
+bottom: 12px;
+
+}
+#ms{
+font-size: 12px;
+position: relative;
+bottom:10px;
+font-weight: bolder;
+
+}
+
+
+
+.panel
+{
+    position: relative;
+ 
+}
+
+.panel-default > .panel-leftheading
+{
+    color: #333;
+    background-color: #f5f5f5;
+ border-color: #ddd;
+}
+
+.panel-primary > .panel-leftheading
+{
+    color: #fff;
+    background-color: #428bca;
+    border-color: #428bca;
+}
+
+.panel-success > .panel-leftheading
+{
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.panel-info > .panel-leftheading
+{
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.panel-warning > .panel-leftheading
+{
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+.panel-danger > .panel-leftheading
+{
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.panel-leftheading
+{    width: 42px;
+    padding: 30px 15px;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 30px;
+    float: left;
+    height: 100%;
+    position: relative;
+
+}
+
+#background{
+ background-color: #8EC63F;
+}
+.panel-lefttitle
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1px;
+      left:5px;
+    font-size: 16px;
+    -webkit-transform: rotate(270deg);
+    -webkit-transform-origin: left top;
+    -moz-transform: rotate(270deg);
+    -moz-transform-origin: left top;
+    -ms-transform: rotate(270deg);
+    -ms-transform-origin: left top;
+    -o-transform: rotate(270deg);
+    -o-transform-origin: left top;
+    transform: rotate(270deg);
+    transform-origin: left top;
+    position: absolute;
+    white-space: nowrap;
+ font-family: Ubuntu;
+text-align: center;
+        font-size: 28px;
+        color: #006400;
+       top:185px;
+       
+}
+
+.panel-lefttitle2
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1px;
+      left:5px;
+    font-size: 16px;
+    -webkit-transform: rotate(270deg);
+    -webkit-transform-origin: left top;
+    -moz-transform: rotate(270deg);
+    -moz-transform-origin: left top;
+    -ms-transform: rotate(270deg);
+    -ms-transform-origin: left top;
+    -o-transform: rotate(270deg);
+    -o-transform-origin: left top;
+    transform: rotate(270deg);
+    transform-origin: left top;
+    position: absolute;
+    white-space: nowrap;
+ font-family: Ubuntu;
+text-align: center;
+        font-size: 28px;
+        color: #006400;
+       top:135px;
+
+}
+
+.panel-lefttitle3
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1px;
+      left:5px;
+    font-size: 16px;
+    -webkit-transform: rotate(270deg);
+    -webkit-transform-origin: left top;
+    -moz-transform: rotate(270deg);
+    -moz-transform-origin: left top;
+    -ms-transform: rotate(270deg);
+    -ms-transform-origin: left top;
+    -o-transform: rotate(270deg);
+    -o-transform-origin: left top;
+    transform: rotate(270deg);
+    transform-origin: left top;
+    position: absolute;
+    white-space: nowrap;
+ font-family: Ubuntu;
+text-align: center;
+        font-size: 28px;
+        color: #006400;
+       top:140px;
+
+}
+
+
+
+.panel-rightbody
+{
+    float: left;
+    margin-left: 3px;
+    padding: 5px;
+}
+
+
+
+
+
+
 
 
 svg .axis text {
@@ -12,45 +192,73 @@ svg .axis text {
 
 /*compass.js*/
 #compass{   
-    margin-left: 70px;
+ margin-right: 1px;
 }
+#thermometer{
+ margin-left: 50px;
 
+}
 
 
 /*HEADER*/
-header#main {
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    background-color: #000000;
-}
 
 
 
-header#main span.title {
+span.title {
     color: #FFFFFF;
-    font-size: 3.5em;
-    text-align: center;
+    font-size: 2.5vw;
+  position: relative;
+    text-align:center;
     font-weight: bolder;
     vertical-align: middle;
-    font-family: fantasy;
+    font-family: Ubuntu;
+
 }
 
-header#main span.subtitle {
-	color: #FFFFFF;
-	font-size: 0.9em;
-	text-align: center;
-	font-style: italic;
+span.localisation
+
+{
+ color: #FFFFFF;
+    font-size: 2.5vw;
+    font-weight: bolder;
+    font-family: Ubuntu;
+    text-align: center;
+    position: absolute;
+    left: 15px;
+    top: 15px;
 }
+
+
+
+img.logo
+{
+    width: 325px;
+    hight : auto;
+position : relative;
+    top : 15px;
+  margin-right: 8px;
+}
+
+span.subtitle {
+        color: #FFFFFF;
+        font-size: 0.9em;
+        text-align: center;
+        font-style: italic;
+}
+
 
 
 /*BODY*/
-
-
 #main-container {
-	padding-top: 50px;
-	background-color: #E9E9E9;
+        padding-top: 1px;
+background: url("/assets/images/back2.png");
+background-repeat:no-repeat;
+  border-radius: 50px;
+  background-size: 900px 9OOpx, cover;
+  position:relative;
+    max-height: 130vh;
 }
+
 
 /*MODAL*/
 .modal-dialog {
@@ -62,54 +270,222 @@ header#main span.subtitle {
 /*panel css*/
 #buttonTemp {
     position: relative;
-    margin-top: 30%;
-    float: right;
+   left: 60px;
+   bottom: 40px;    
 }
 
 #buttonHum {
-    position: absolute;
-    margin: 0 0 0 0;
+    position: relative;
     float: right;
+ margin: 0 0 0 0;
+top:10px;
+left:50px;
 }
 
+
+#header {
+ background-color: #8EC63F;
+  width: 1%;
+height:0px;
+padding:1px;
+position : relative;
+
+
+}
 #header-rowcol {
-	text-align: center;
-	font-size: 28px;
-	color: #FFFFFF;
-	font-weight: bold;
+        text-align: center;
+        font-size: 28px;
+        color: #006400;
+        font-weight: bold;
+        font-family: ubuntu;
+          font-style: oblique;
+        position: relative;
+          transform: rotate(270deg);
+          transform-origin: left top 0;
+         top : 175px; 
+           width:60px;
+
+}
+#humidity{
+width: 100px;
+    hight : 100px;
+position:relative;
+top:20px;
+
+}
+#wind {
+position:relative;
+ width: 370px;
+    hight :370px; 
+right:130px;
+top:30px;
+}
+ 
+
+#WS {
+font-size: 40px;
+font-weight: bold;
+position:relative;
+left:100px;
+bottom:50px;
+
+}
+#msw {
+font-size: 20px;
+position:relative;
+bottom:35px;
+left:60px;
+
+}
+#icon {
+position:relative;
+ width: 160px;
+    hight : 160px;
+margin-left:1px;
+top:30px;
 }
 
+#TM {
+font-weight: bold;
+font-size: 40px;
+position:relative;
+bottom:60px;
+left:160px;
 
-#panel-header-box {
-	background-color: #000000;
+}
+#cel2{
+font-size: 23px;
+font-weight: bold;
+position:relative;
+bottom:105px;
+left:235px;
+
+
+}
+
+#HM {
+font-weight: bold;
+font-size: 40px;
+position:relative;
+bottom:40px;
+left:100px;
+
+}
+#po2{
+font-size: 23px;
+font-weight: bold;
+position:relative;
+bottom:85px;
+left:180px;
+
+
 }
 
 
 #rightColumn {
-	border-style: dashed;
-	border-width: 0;
-	border-left: 1;
-	border-left-width: 1px;
+       border-style: dashed ;
+         border-width: 0;
+        border-left-width: 1px;
+           width: 50%;
+          border-left: 1;
+      position: relative;
+
 }
 
-#dataHeader {
+#dataHeaderT {
     font-size: 15px;
     font-weight: bold;
     text-decoration: underline;
+    text-align: center;
+   margin-left: 20px;
+   position: relative;
+   bottom: 10px;
+
+}
+#dataHeaderH {
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+   margin-left: 20px; 
+   position: relative;
+}
+#titleW{
+font-size: 15px;
+ position: relative;
+   bottom: 10px;
+
 }
 
-.dataValue {
-    font-size: 40px;
+#dataHeaderW {
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
     text-align: center;
+   position: relative;
+   bottom: 10px;
+}
+
+
+.dataValue {
+    font-size: 16px;
+    text-align: center;
+     margin-left: 20px; 
+   position: relative;
+    bottom: 10px;
+
+}
+
+.dataValueH {
+    font-size: 15px;
+    text-align: center;
+    margin-left: 0px;
+    position: relative;
+
+}
+
+#po {
+font-size: 15px;
+position: relative;
+
+} 
+.dataValueWS {
+    font-size: 15px;
+    text-align: center;
+    margin-left: 0px;
+    position: relative;
+     bottom: 10px;
+
+}
+.dataValueWD {
+    font-size: 15px;
+    text-align: center;
+    margin-left: 0px;
+    position: relative;
+     bottom: 10px;
+
+}
+
+#p {
+font-size: 15px;
+position: relative;
+ bottom: 10px;
+
+
 }
 
 .timeValue {
-    font-size: 12px;
+    font-size: 10px;
     font-style: italic;
     position: relative;
-    bottom: 4ex; 
+    bottom: 2ex; 
     font-size: 80%;
+     margin-right: 30px;
+   position: relative;
+    bottom: 15px;
+
 }
+
 
 .timeValueHumi {
     font-style: italic;
@@ -118,13 +494,68 @@ header#main span.subtitle {
     font-size: 80%;
 }
 
-.panel {
-    border-color: #000000;
-    height: 500px;
+.timeValueWind {
+    font-style: italic;
+    position: relative;
+    bottom: 1ex;
+    font-size: 80%;
+    bottom: 10px;
 }
 
+
+
+
+.panel {
+    border-color: #000000;
+    height: 220px;
+background: url("/assets/images/back22.png");   
+   position:relative;   
+   bottom:40px;
+   background-color: Beige
+
+}
+
+#openweathermap-widget-5{
+position:relative;
+bottom:10px;
+
+
+}
+
+.panell2{
+ height: 160px;
+background: url("/assets/images/back22.png");
+
+}
+
+.panell1{
+background: url("/assets/images/back22.png");
+
+}
+.panell3{
+background: url("/assets/images/back22.png");
+
+}
+
+
+
+.panel2 {
+    border-color: #000000;
+    height: 160px;
+    background-color: Beige
+}
+
+.panel3{
+position:relative;
+    height: 220px;
+bottom:40px;
+}
+
+
 .panel-body {
-    padding-bottom: 5px;
+    padding-bottom: 4px;
+ height: 300px;
+
 }
 
 #humRightColumn {
@@ -142,16 +573,12 @@ header#main span.subtitle {
     color: #FF0000;
 }
 
-#rainDataValue {
-    font-size: 15px;
-    color: #FF0000;
-}
-
 
 .line {
   stroke-width: 1;
   fill: none;
   clip-path: url(#clip);
+
 }
 
 .area {

@@ -30,7 +30,8 @@ function drawHumidityGaugeChart(dataList) {
     //        }
     //    },
         size: {
-            height: 180
+            height: 100
+           
         }
     });
 }

@@ -1,8 +1,22 @@
-@(mongoDataTempRaw: List[String], mongoDataTempAgr: List[String], mongoDataHumiRaw: List[String], mongoDataHumiAgr: List[String], mongoDataWindSRaw: List[String], mongoDataWindSAgr: List[String], mongoDataWindDRaw: List[String], mongoDataWindDAgr: List[String], mongoDataRainRaw: List[String], mongoDataRainAgr: List[String], mongoDataAirRaw: List[String], mongoDataAirAgr: List[String], allDayTemp: List[Object], allDayHumi: List[Object], allDayWindS: List[Object], allDayWindD: List[Object], allDayRain: List[Object], allDayAir: List[Object], switchForm: Form[Switcher])
+@(weatherCond: List[String],mongoDataTempRaw: List [String], mongoDataHumiRaw: List[String], mongoDataWindSRaw: List[String], mongoDataWindDRaw: List[String], allDayTemp: List[Object], allDayHumi: List[Object], allDayWindS: List[Object], allDayWindD: List[Object], switchForm: Form[Switcher])
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118405183-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118405183-1');
+</script>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <meta charset=utf-8>
         <title>Landing</title>
         <!-- load d3.min.js and c3.min.js/css-->
@@ -24,17 +38,13 @@
 
         <!-- load custom assets in public/javascripts for js files and public/stylesheets for css files -->
         <!-- load graph js -->
-        <script src="@routes.Assets.versioned("javascripts/graphs/tempGraphs.js")" type="text/javascript"></script>        
+        <script src="@routes.Assets.versioned("javascripts/graphs/tempGraphs.js")" type="text/javascript"></script>
         <script src="@routes.Assets.versioned("javascripts/graphs/humidityGraphs.js")" type="text/javascript"></script>
-        <script src="@routes.Assets.versioned("javascripts/graphs/rainGraphs.js")" type="text/javascript"></script>
-        <script src="@routes.Assets.versioned("javascripts/graphs/airGraphs.js")" type="text/javascript"></script>
-
+        
         <!-- load widget js -->
         <script src="@routes.Assets.versioned("javascripts/widgets/therm.js")" type="text/javascript"></script>
         <script src="@routes.Assets.versioned("javascripts/widgets/humiGauge.js")" type="text/javascript"></script>
         <script src="@routes.Assets.versioned("javascripts/widgets/compass.js")" type="text/javascript"></script>
-        <script src="@routes.Assets.versioned("javascripts/widgets/liquidGauge.js")" type="text/javascript"></script>
-        <script src="@routes.Assets.versioned("javascripts/widgets/CO2Gauge.js")" type="text/javascript"></script>
         
         <!-- other js -->
         <script src="@routes.Assets.versioned("javascripts/displayData.js")" type="text/javascript"></script>
@@ -56,7 +66,7 @@
                             <ul class="nav nav-pills">
                                 <li class="active"><a href="" data-target="#tab1" data-toggle="pill">Today</a></li>
                                 <li><a href="" data-target="#tab2" data-toggle="pill">Last 7 days</a></li>
-                                <li><a href="" data-target="#tabCustom" data-toggle="pill">Custom duration</a></li>
+                                
                             </ul>
                             <div class="tab-content">
                                 <div class="tab-pane active" id="tab1">
@@ -65,80 +75,58 @@
                                 <div class="tab-pane" id="tab2">
                                     <div id="graph7Days"></div>
                                 </div>
-                                <div class="tab-pane" id="tabCustom">
-                                    <div class="form-group" onchange="refreshValue()">
-                                        <label class="control-label col-md-1" for="month">Month</label>
-                                        <div class="col-md-4">
-                                            <select id="month" class="form-control">
-                                                <option></option>
-                                                <option>January</option>
-                                                <option>February</option>
-                                                <option>March</option>
-                                                <option>April</option>
-                                                <option>May</option>
-                                                <option>June</option>
-                                                <option>July</option>
-                                                <option>August</option>
-                                                <option>September</option>
-                                                <option>October</option>
-                                                <option>November</option>
-                                                <option>December</option>                                           
-                                            </select>
-                                        </div>
 
-                                        <label class="control-label col-md-1" for="year">Year</label>
-                                        <div class="col-md-4">
-                                            <select id="year" class="form-control">
-                                                <option></option>
-                                                <option>2017</option>
-                                                <option>2016</option>
-                                                <option>2015</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <br> <br> <br>
-                                    <div id="graphCustom"></div>
-                                </div>
+
                         </div>
+                               
                     </div>
                 </div>
             </div>
         </div>
-        <header id="main">
-            <div class="container">
-                <span class="title">Weather observation app.</span><br>
-                <span class="subtitle">still not even alpha version aka. "blackie". No, it really is, stop asking.</span>
-            </div>
-        </header>
 
         <!-- PANELS -->
         <div class="container" id="main-container"> <!-- open body container -->
-            
+
             <!-- this needs to be put elsewhere (in a tab maybe ?), this is just here to show how to do it -->
-            @helper.form(action = routes.Application.landingPage()) {
-                @helper.inputText(
-                    switchForm("stationName"),
-                    '_label -> "Type the name of the station you want to view"
-                )
-                <!-- <input type="submit" value="Submit"> needs to be styled-->
-            }
+   <div class="row"> 
+<div class="col-md-4">
+
+                <span class="localisation">Galway, Ireland</span><br>
+           </div>
+
+         <div class="col-md-4">
+
+                <span class="title"><center>Weather Observation Application</center></span><br>
+           </div>
+            <div  class="col-md-4">
+           <img class="logo" src="@routes.Assets.versioned("/images/logo.png")"/> </img>
+
+            </div>
+
+</div>
+
+
+
+
+
+
             <div class="row"> <!-- open row 1-->
-                <div class="col-md-4"> <!-- col md 4 for panel temperature -->
-                    <div class="panel panel-default" id="panel1"> <!-- panel temperature -->
-                        <div class="panel-heading" id="panel-header-box"> <!-- panel temperature header -->
-                            <h1 id="header-rowcol">Temperature</h1>
-                        </div>
-                        <div class="body-panel-content">
-                            <table class="table">
+                <div class="col-sm-6"> <!-- col md 4 for panel temperature -->
+<div  class="panel panel-default">
+  <div id="background"class="panel-leftheading">
+      <h1 class="panel-lefttitle">Temperature</h1>
+  </div>
+  <div class="panel-rightbody">
+                                 <table class="table">
                                 <tr>
                                     <td>
                                         <div id="thermometer"></div>
                                     </td>
                                     <td id="rightColumn">
-                                        <span id="dataHeader">Latest temperature</span><br><span class="dataValue" id="tempDataValueCur"></span><span class="timeValue" id="tempDataTimeCur"></span><br>
-                                        <span id="dataHeader">Max today</span><br><span class="dataValue" id="tempDataValueMax"></span><span class="timeValue" id="tempDataTimeMax"></span><br>
-                                        <span id="dataHeader">Min today</span><br><span class="dataValue" id="tempDataValueMin"></span><span class="timeValue" id="tempDataTimeMin"></span><br>
-                                        <span id="dataHeader">Avg today</span><br><span class="dataValue" id="tempDataValueAvg"></span><span class="timeValue" id="tempDataTimeAvg"></span>
+                                        <span id="dataHeaderT">Latest temperature</span><br><span class="dataValue" id="tempDataValueCur"></span><span id="cel">&#8451;</span> <span class="timeValue" id="tempDataTimeCur"></span><br>
+                                        <span id="dataHeaderT">Max today</span><br><span class="dataValue" id="tempDataValueMax"></span><span id="cel">&#8451;</span> <span class="timeValue" id="tempDataTimeMax"></span><br>
+                                        <span id="dataHeaderT">Min today</span><br><span class="dataValue" id="tempDataValueMin"></span><span id="cel">&#8451;</span> <span class="timeValue" id="tempDataTimeMin"></span><br>
+                                        <span id="dataHeaderT">Avg today</span><br><span class="dataValue" id="tempDataValueAvg"></span><span id="cel">&#8451;</span> <span class="timeValue" id="tempDataTimeAvg"></span>
                                         <button class="btn btn-primary btn-lg" id="buttonTemp" data-toggle="modal" data-target="#myModal">Graph</button>
                                     </td> <!-- close right column -->
                                 </tr>
@@ -146,120 +134,98 @@
                         </div> <!-- close body panel temperature -->
                     </div> <!-- close panel temperature -->
                 </div> <!-- close col md 4 for temperature -->
+                          <div class="col-sm-2"> </div>
+                       <div class="col-sm-3">
+        <div class="panel panel-default panell1">
+  <img id="icon"src="/assets/images/@weatherCond.get(2).concat(".png")"/> </img> <div id="TM"> @allDayTemp.get(5) </div> <div id="cel2">&#8451; </div>
+            
+               </div>
+               </div>
 
-                <div class="col-md-4"> <!-- open col md 4 for panel humidity -->
-                    <div class="panel panel-default" id="panel2"> <!-- open panel humidity -->
-                        <div class="panel-heading" id="panel-header-box"> <!-- open panel humidity header -->
-                            <h1 id="header-rowcol">Humidity</h1>
-                        </div> <!-- close panel humidity header -->
-                        <div class="body-panel-content">
-                            <div id="humidity-gauge"></div>
-                            <hr>
-                            <table>
+                  </div>
+
+                     <div class="row"> <!-- open row 1-->
+                <div class="col-sm-6"> <!-- col md 4 for panel temperature -->
+<div class="panel  panel-default panel2">
+  <div id="background" class="panel-leftheading">
+      <h3 class="panel-lefttitle2">Humidity</h3>
+  </div>
+  <div class="panel-rightbody">
+                            <table class="table">
                                 <tr>
-                                    <td class="col-md-8">
-                                        <span id="dataHeader">Latest value:</span> <span id="humiDataValueCur"></span>%<span id="humiDataTimeCur" class="timeValueHumi"></span><br>
-                                        <span id="dataHeader">Min today:</span> <span id="humiDataValueMin"></span>%<span id="humiDataTimeMin" class="timeValueHumi"></span><br>
-                                        <span id="dataHeader">Max today:</span> <span id="humiDataValueMax"></span>%<span id="humiDataTimeMax" class="timeValueHumi"></span><br>
-                                        <span id="dataHeader">Avg today:</span><span id="humiDataValueAvg"></span>%<br>
+                                    <td>
+                                        <div id="humidity-gauge"></div>
                                     </td>
-                                    <td class="col-md-4" id="humRightColumn">
+                                    <td id="rightColumn">
+                                        <span id="dataHeaderH">Latest value:</span> <span class="dataValueH" id="humiDataValueCur"></span><span id ="po">%</span><span  id="humiDataTimeCur" class="timeValueHumi"></span><br>
+                                        <span id="dataHeaderH">Min today:</span> <span class="dataValueH" id="humiDataValueMin"></span><span id ="po">%</span><span  id="humiDataTimeMin" class="timeValueHumi"></span><br>
+                                        <span id="dataHeaderH">Max today:</span> <span class="dataValueH" id="humiDataValueMax"></span><span id ="po">%</span><span  id="humiDataTimeMax" class="timeValueHumi"></span><br>
+                                        <span id="dataHeaderH">Avg today:</span><span class="dataValueH" id="humiDataValueAvg"></span><span id ="po">%</span><br>
                                         <button class="btn btn-primary btn-lg" id="buttonHum" data-toggle="modal" data-target="#myModal">Graph</button>
-                                    </td>
+                                    </td> <!-- close right column -->
                                 </tr>
                             </table>
-                        </div> <!-- close body panel humidity -->
-                    </div> <!-- close panel -->
-                </div> <!-- close col-md-4 -->
-
-                <div class="col-md-4"> <!-- col md 4 for panel wind -->
-                    <div class="panel panel-default" id="panel3"> <!-- panel wind -->
-                        <div class="panel-heading" id="panel-header-box"> <!-- panel wind header -->
-                            <h1 id="header-rowcol">Wind</h1>
-                        </div> <!-- close panel wind header -->
-                       <div class="body-panel-content">
-                            <div id="compass"></div>
-                            <hr>
-                            <table>
-                                <tr>
-                                    <td>
-                                        <div style="text-align: center;">WIND SPEED</div>
-                                        <span id="dataHeader">Latest value:</span> <span id="windDataValueWSCur"></span> || <span id="windDataTimeWSCur"></span><br>
-                                        <span id="dataHeader">Today's min:</span> <span id="windDataValueWSMin"></span> || <span id="windDataTimeWSMin"></span><br>
-                                        <span id="dataHeader">Today's max:</span> <span id="windDataValueWSMax"></span> || <span id="windDataTimeWSMax"></span><br>
-                                        <span id="dataHeader">Today's average:</span> <span id="windDataValueWSAvg"></span><br>
-                                    </td>   
-                                    <td>
-                                        <div style="text-align: center;">WIND DIRECTION</div>
-                                        <span id="dataHeader">Latest value:</span> <span id="windDataValueWDCur"></span> || <span id="windDataTimeWDCur"></span><br>
-                                        <span id="dataHeader">Today's min:</span> <span id="windDataValueWDMin"></span> || <span id="windDataTimeWDMin"></span><br>
-                                        <span id="dataHeader">Today's max:</span> <span id="windDataValueWDMax"></span> || <span id="windDataTimeWDMax"></span><br>
-                                        <span id="dataHeader">Today's average:</span> <span id="windDataValueWDAvg"></span><br>
-                                    </td>
-                                </tr>
-                            </table>
-                            
-
-
-                            
-                            
-                        </div>
-                    </div> <!-- close panel wind-->
-                </div> <!-- close col md 4 for panel wind-->
+                        </div> <!-- close body panel temperature -->
+                    </div> <!-- close panel temperature -->
+                </div> <!-- close col md 4 for temperature -->
+                 <div  class="col-md-2"> </div>
+            <div  class="col-md-3">
+             <div class="panel panel-default panell2">
+           <img id="humidity" src="@routes.Assets.versioned("/images/humidity3.png")"/> </img> <div  id="HM"> @allDayHumi.get(5) </div> <div id="po2"> % </div>
+            </div>
             </div>
 
-            <div class="row"> <!-- open row 2-->
-                <div class="col-md-4"> <!-- open col panel rain -->
-                    <div class="panel panel-default" id="panel4"> <!-- open panel rain -->
-                        <div class="panel-heading" id="panel-header-box"> <!-- open header panel rain -->
-                            <h1 id="header-rowcol">Rain</h1>
-                        </div> <!-- close header panel rain -->
-                        <div class="body-panel-content"> <!-- open body panel rain -->
-                            <svg id="rainGauge" width="97%" height="200" style="margin-top: 10px;"></svg>
-                            <table>
-                                <tr>
-                                    <td class="col-md-8">
-                                    <span id="dataHeader">Latest value:</span> <span id="rainDataValueCur"></span> || <span id="rainDataTimeCur"></span><br>
-                                    <span id="dataHeader">Today's min:</span> <span id="rainDataValueMin"></span> || <span id="rainDataTimeMin"></span><br>
-                                    <span id="dataHeader">Today's max:</span> <span id="rainDataValueMax"></span> || <span id="rainDataTimeMax"></span><br>
-                                    <span id="dataHeader">Today's average:</span> <span id="rainDataValueAvg"></span><br>
-                                    </td>
-                                    <td class="col-md-4" id="rainRightColumn">
-                                        <button class="btn btn-primary btn-lg" id="buttonRain" data-toggle="modal" data-target="#myModal">Graph</button>
-                                    </td>
-                                </tr>
-                            </table>
+ </div>		
 
-                        </div> <!-- close body panel rain -->
-                    </div> <!-- close panel rain-->
-                </div> <!-- close col md 4 for panel rain -->
 
-                <div class="col-md-4"> <!-- open col panel air quality -->
-                    <div class="panel panel-default" id="panel5"> <!-- open panel air quality -->
-                        <div class="panel-heading" id="panel-header-box"> <!-- open header panel air quality -->
-                            <h1 id="header-rowcol">CO2</h1>
-                        </div> <!-- close header panel air quality -->
-                        <div class="panel-body-content"> <!-- open body panel air quality -->
-                            <div id="CO2Gauge"></div>
-                            <hr>
-                            <table>
-                                <tr>
-                                    <td class="col-md-8">
-                                        <span id="dataHeader">Latest value:</span> <span id="airDataValueCur"></span> || <span id="airDataTimeCur"></span><br>
-                                        <span id="dataHeader">Today's min:</span> <span id="airDataValueMin"></span> || <span id="airDataTimeMin"></span><br>
-                                        <span id="dataHeader">Today's max:</span> <span id="airDataValueMax"></span> || <span id="airDataTimeMax"></span><br>
-                                        <span id="dataHeader">Today's average:</span> <span id="airDataValueAvg"></span><br>         
+
+                        <div class="row"> <!-- open row 1-->
+                <div class="col-sm-6"> <!-- col md 4 for panel temperature -->
+
+<div class="panel panel-default panel3">
+  <div id="background" class="panel-leftheading">
+      <h3 class="panel-lefttitle3">Wind</h3>
+  </div>
+  <div class="panel-rightbody">
+
+
+
+
+
+                            <table class="table">
+                                <tr> 
+                                    <td>
+                                        <div id="compass"></div>
                                     </td>
-                                    <td class="col-md-4">
-                                        <button class="btn btn-primary btn-lg" id="buttonAir" data-toggle="modal" data-target="#myModal">Graph</button>
+                                    <td id="rightColumn">
+                                                <div id="titleW" style="text-align: center;">WIND SPEED</div>
+                                       <span id="dataHeaderW">Latest value:</span> <span class="dataValueWS"  id="windDataValueWSCur"></span> <span id="ms">m/s</span><span id="p"> ||</span> <span id="windDataTimeWSCur" class="timeValueWind"></span><br>
+                                      <span id="dataHeaderW">Today's min:</span> <span class="dataValueWS"  id="windDataValueWSMin"></span> <span id="ms">m/s</span><span id="p"> ||</span> <span id="windDataTimeWSMin" class="timeValueWind"></span><br>
+                                       <span id="dataHeaderW">Today's max:</span> <span class="dataValueWS"  id="windDataValueWSMax"></span> <span id="ms">m/s</span><span id="p"> ||</span> <span id="windDataTimeWSMax" class="timeValueWind"></span><br>
+                                          <br>
+                                
+                                        <div id="titleW" style="text-align: center;">WIND DIRECTION</div>
+                                 <span id="dataHeaderW">Latest value:</span> <span  class="dataValueWD" id="windDataValueWDCur"></span><span id="p"> || </span> <span id="windDataTimeWDCur" class="timeValueWind"></span><br>
+                                <span id="dataHeaderW">Today's min:</span> <span class="dataValueWD" id="windDataValueWDMin"></span><span id="p"> || </span> <span id="windDataTimeWDMin" class="timeValueWind"></span><br>
+                                 <span id="dataHeaderW">Today's max:</span> <span class="dataValueWD" id="windDataValueWDMax"></span><span id="p"> || </span> <span id="windDataTimeWDMax" class="timeValueWind"></span><br>
                                     </td>
-                                </tr>
+					</tr>
+								
                             </table>
-                        </div> <!-- close body panel air quality -->
-                    </div> <!-- close panel air quality-->
-                </div> <!-- close col md 4 for air quality -->
-            </div> <!-- close row 2 -->
-        </div> <!-- close body container -->
+                        </div> <!-- close body panel temperature -->
+                    </div> <!-- close panel temperature -->
+                </div> <!-- close col md 4 for temperature -->
+            <div  class="col-md-2"> </div>
+            <div  class="col-md-3">
+             <div class="panel panel-default panell3">
+           <img id="wind" src="@routes.Assets.versioned("/images/wind2.gif")"/> </img> <div id="WS"> @allDayWindS.get(5)<div> <div id="msw"> m/s </div>
+            </div>
+
+            </div>
+
+
+  </div>	            
+
 
     </body>
 
@@ -274,7 +240,7 @@
         }
         displayTempData(arrayTempAllDay);
         plotThermometer(arrayTempAllDay);
-                                            
+
         /*raw data for graph 1 day and 7 days*/
         var arrayMongoTempDataRaw = []
         @for(d <- 0 until mongoDataTempRaw.size()) {
@@ -282,19 +248,12 @@
             eval(appendTR)
         }
 
-        /*agreggated data for graph custom period*/
-        var arrayMongoTempDataAgr = []
-        @for(d <- 0 until mongoDataTempAgr.size()) {
-            var appendTA = "arrayMongoTempDataAgr@mongoDataTempAgr.get(d)".replace(/&quot;/g, '\"')
-            eval(appendTA)
-        }
-
 
         /*onclick button graph temperature, plot graphs when pushed*/
         $('#buttonTemp').on('click', function() {
             plotGraphTempRaw1Day(arrayMongoTempDataRaw);
             plotGraphTempRaw7Days(arrayMongoTempDataRaw);
-            // depending which button is pressed (here it is buttonTemp, so temperature panel's graph button), 
+            // depending which button is pressed (here it is buttonTemp, so temperature panel's graph button),
             // redefine refreshValue which is triggered by change on modal's custom tab
             // refreshValue is global so that other click() jquery methods can access the variable
             // if it was not global, refreshValue would be defined on click()'s local scope and thus not usable in the modal or
@@ -337,13 +296,6 @@
         @for(d <- 0 until mongoDataHumiRaw.size()) {
             var appendHR = "arrayMongoHumiRaw@mongoDataHumiRaw.get(d)".replace(/&quot;/g, '\"')
             eval(appendHR)
-        }
-
-        /*agreggated data for graph custom period*/
-        var arrayMongoHumiAgr = []
-        @for(d <- 0 until mongoDataHumiAgr.size()) {
-            var appendHA = "arrayMongoHumiAgr@mongoDataHumiAgr.get(d)".replace(/&quot;/g, '\"')
-            eval(appendHA)
         }
 
         /*onclick button graph humidity, plot graphs when pushed*/
@@ -394,115 +346,7 @@
 
 
 
-        //RAIN PANEL
-        var arrayRainAllDay = []
-        @for(d <- 0 until allDayRain.size()) {
-            arrayRainAllDay.push(@allDayRain.get(d))
-        }
 
-        displayRainData(arrayRainAllDay)
-        //gauge configuration
-        var liquidGauge = loadLiquidFillGauge("rainGauge", arrayRainAllDay[5], config);
-        var config = liquidFillGaugeDefaultSettings();
-        config.textVertPosition = 0.8;
-        config.waveAnimateTime = 5000;
-        config.waveHeight = 0.15;
-        config.waveOffset = 0.25;
-        config.valueCountUp = false;
-        config.waveAnimate = false;
-        waveRise = false;
-
-        /*raw data for graph 1 day and 7 days*/
-        var arrayMongoRainRaw = []
-        @for(d <- 0 until mongoDataRainRaw.size()) {
-            var appendRR = "arrayMongoRainRaw@mongoDataRainRaw.get(d)".replace(/&quot;/g, '\"')
-            eval(appendRR)
-        }
-
-        /*agreggated data for graph custom period*/
-        var arrayMongoRainAgr = []
-        @for(d <- 0 until mongoDataRainAgr.size()) {
-            var appendRA = "arrayMongoRainAgr@mongoDataRainAgr.get(d)".replace(/&quot;/g, '\"')
-            eval(appendRA)
-        }       
-
-        /*onclick button graph humidity, plot graphs when pushed*/
-        $('#buttonRain').on('click', function() {
-            plotGraphRainRaw1Day(arrayMongoRainRaw);
-            plotGraphRainRaw7Days(arrayMongoRainRaw);
-            // same as before, refreshValue is "redefined" (to be correct, refreshValue simply gets a new value)
-            // function is modified so that it takes humidity data in account
-            window.refreshValue = function () {
-                var monthValue = monthValue = document.getElementById("month").value;
-                var yearValue = yearValue = document.getElementById("year").value;
-                if ((yearValue == "") || ((yearValue == "") && (monthValue == ""))) {
-                    document.getElementById("graphCustom").innerHTML = "Please select either a year alone or a month + year";
-                } else if (monthValue == "") {
-                    document.getElementById("graphCustom").innerHTML = "";
-                    var type = "year";
-                    var dateY = yearValue;
-                    var dateM = "";
-                    plotGraphLineTempCustom(arrayMongoRainAgr, type, dateM, dateY);
-                } else {
-                    document.getElementById("graphCustom").innerHTML = "";
-                    var type = "month";
-                    var dateY = yearValue;
-                    var dateM = toJSMonth(monthValue);
-                    plotGraphLineTempCustom(arrayMongoRainAgr, type, dateM, dateY);
-                }
-            };
-        });
-
-        //AIR PANEL
-
-        var arrayAirDataRaw = []
-        @for(d <- 0 until allDayAir.size()) {
-            arrayAirDataRaw.push(@allDayAir.get(d))
-        }
-
-        displayAirData(arrayAirDataRaw)
-        drawCO2GaugeChart(arrayAirDataRaw)
-
-        /*raw data for graph 1 day and 7 days*/
-        var arrayMongoAirRaw = []
-        @for(d <- 0 until mongoDataAirRaw.size()) {
-            var appendAR = "arrayMongoAirRaw@mongoDataAirRaw.get(d)".replace(/&quot;/g, '\"')
-            eval(appendAR)
-        }
-
-        /*agreggated data for graph custom period*/
-        var arrayMongoAirAgr = []
-        @for(d <- 0 until mongoDataAirAgr.size()) {
-            var appendAA = "arrayMongoAirAgr@mongoDataAirAgr.get(d)".replace(/&quot;/g, '\"')
-            eval(appendAA)
-        }       
-
-        /*onclick button graph humidity, plot graphs when pushed*/
-        $('#buttonAir').on('click', function() {
-            plotGraphAirRaw1Day(arrayMongoAirRaw);
-            plotGraphAirRaw7Days(arrayMongoAirRaw);
-            // same as before, refreshValue is "redefined" (to be correct, refreshValue simply gets a new value)
-            // function is modified so that it takes humidity data in account
-            window.refreshValue = function () {
-                var monthValue = monthValue = document.getElementById("month").value;
-                var yearValue = yearValue = document.getElementById("year").value;
-                if ((yearValue == "") || ((yearValue == "") && (monthValue == ""))) {
-                    document.getElementById("graphCustom").innerHTML = "Please select either a year alone or a month + year";
-                } else if (monthValue == "") {
-                    document.getElementById("graphCustom").innerHTML = "";
-                    var type = "year";
-                    var dateY = yearValue;
-                    var dateM = "";
-                    plotGraphAirCustom(arrayMongoAirAgr, type, dateM, dateY);
-                } else {
-                    document.getElementById("graphCustom").innerHTML = "";
-                    var type = "month";
-                    var dateY = yearValue;
-                    var dateM = toJSMonth(monthValue);
-                    plotGraphAirCustom(arrayMongoAirAgr, type, dateM, dateY);
-                }
-            };
-        });
 
         /*Empties the modal when it is closed (so that it can be updated when opening a new graph modal)*/
         $(document).on("hidden.bs.modal", function (e) {
@@ -541,6 +385,7 @@
                     console.log("Error in month selection");
             }
         }
-    </script>   
+    </script>
 </html>
+
 

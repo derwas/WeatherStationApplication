@@ -1,0 +1,318 @@
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:4:1: package play.data does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.data.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:5:1: package play does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.Logger;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:6:1: package play.mvc does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.mvc.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:9:1: package views.html does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport views.html.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:10:1: package models does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport models.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:20:1: package javax.inject does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport javax.inject.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:23:1: package akka.actor does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.actor.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:24:1: package play.libs.F does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.F.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:25:1: package play.mvc does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.mvc.WebSocket;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:26:1: package play.mvc does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.mvc.LegacyWebSocket;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:28:1: package play.data does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.data.FormFactory;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:30:1: package com.mongodb does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.mongodb.MongoClient;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:31:1: package com.mongodb.client does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.mongodb.client.MongoCursor;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:32:1: package com.mongodb.client does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.mongodb.client.MongoDatabase;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:39:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol: class Controller[0m
+[0m[[0m[31merror[0m] [0m[0mpublic class Application extends Controller {[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:41:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class FormFactory[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.Application[0m
+[0m[[0m[31merror[0m] [0m[0m    @Inject FormFactory formFactory;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:43:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.Application[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result landingPage() {[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:129:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.Application[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result generator() {[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:5:1: package play does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.Logger;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:8:1: package com.mongodb does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.mongodb.MongoClient;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:9:1: package com.mongodb.client does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.mongodb.client.MongoCursor;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:10:1: package com.mongodb.client does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.mongodb.client.MongoDatabase;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:11:1: package com.mongodb.client does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.mongodb.client.MongoCollection;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:12:1: package com.mongodb.client.model does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.mongodb.client.model.DeleteOneModel;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:13:1: package com.mongodb.client.model does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.mongodb.client.model.InsertOneModel;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:14:1: package org.bson does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.bson.Document;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:17:1: package com.mongodb.client.model does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport static com.mongodb.client.model.Sorts.descending;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:17:1: static import only from classes and interfaces[0m
+[0m[[0m[31merror[0m] [0m[0mimport static com.mongodb.client.model.Sorts.descending;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:18:1: package com.mongodb.client.model does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport static com.mongodb.client.model.Filters.lte;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:18:1: static import only from classes and interfaces[0m
+[0m[[0m[31merror[0m] [0m[0mimport static com.mongodb.client.model.Filters.lte;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Global.java:2:1: package play.libs does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.Akka;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Global.java:3:1: package play does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.Application;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Global.java:4:1: package play does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.GlobalSettings;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Global.java:7:1: package akka.actor does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.actor.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Global.java:9:1: package models does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport models.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Global.java:10:1: package play does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.Logger;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Global.java:13:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol: class GlobalSettings[0m
+[0m[[0m[31merror[0m] [0m[0mpublic class Global extends GlobalSettings {[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Global.java:16:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Application[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class Global[0m
+[0m[[0m[31merror[0m] [0m[0m    public void onStart(Application application) {[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Tools.java:14:1: package com.mongodb does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.mongodb.MongoClient;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Tools.java:15:1: package com.mongodb.client does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.mongodb.client.MongoCursor;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Tools.java:16:1: package com.mongodb.client does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.mongodb.client.MongoDatabase;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Tools.java:17:1: package com.mongodb.client does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.mongodb.client.MongoCollection;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Tools.java:18:1: package org.bson does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.bson.Document;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Tools.java:20:1: package com.mongodb.client.model does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport static com.mongodb.client.model.Sorts.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Tools.java:21:1: package com.mongodb.client.model does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport static com.mongodb.client.model.Projections.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Tools.java:22:1: package play does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.Logger;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:41:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Inject[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.Application[0m
+[0m[[0m[31merror[0m] [0m[0m    @Inject FormFactory formFactory;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:44:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Form[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.Application[0m
+[0m[[0m[31merror[0m] [0m[0m        Form<Switcher> switchForm = formFactory.form(Switcher.class);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:44:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Switcher[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.Application[0m
+[0m[[0m[31merror[0m] [0m[0m        Form<Switcher> switchForm = formFactory.form(Switcher.class);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:44:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Switcher[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.Application[0m
+[0m[[0m[31merror[0m] [0m[0m        Form<Switcher> switchForm = formFactory.form(Switcher.class);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:45:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Switcher[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.Application[0m
+[0m[[0m[31merror[0m] [0m[0m        Switcher switcher = switchForm.bindFromRequest().get();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:53:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class MongoClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.Application[0m
+[0m[[0m[31merror[0m] [0m[0m            MongoClient mongoClient = new MongoClient("localhost" , 27017); //opens connection with mongodb server[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:53:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class MongoClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.Application[0m
+[0m[[0m[31merror[0m] [0m[0m            MongoClient mongoClient = new MongoClient("localhost" , 27017); //opens connection with mongodb server[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:54:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class MongoCursor[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.Application[0m
+[0m[[0m[31merror[0m] [0m[0m            MongoCursor<String> mongoCursor = mongoClient.listDatabaseNames().iterator(); // create cursor with database names[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:113:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable landing[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.Application[0m
+[0m[[0m[31merror[0m] [0m[0m        return ok(landing.render([0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/Application.java:133:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable generator[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.Application[0m
+[0m[[0m[31merror[0m] [0m[0m        return ok(generator.render());[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:71:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class MongoClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoClient mongoClient = new MongoClient( "localhost" , 27017);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:71:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class MongoClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoClient mongoClient = new MongoClient( "localhost" , 27017);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:72:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class MongoDatabase[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoDatabase database = mongoClient.getDatabase(databaseName);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:81:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class MongoCollection[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> tempRawCollection = database.getCollection(COLLECTIONS[0]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:81:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> tempRawCollection = database.getCollection(COLLECTIONS[0]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:82:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class MongoCollection[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> humiRawCollection = database.getCollection(COLLECTIONS[2]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:82:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> humiRawCollection = database.getCollection(COLLECTIONS[2]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:83:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class MongoCollection[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> windSRawCollection = database.getCollection(COLLECTIONS[4]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:83:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> windSRawCollection = database.getCollection(COLLECTIONS[4]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:84:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class MongoCollection[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> windDRawCollection = database.getCollection(COLLECTIONS[6]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:84:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> windDRawCollection = database.getCollection(COLLECTIONS[6]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:85:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class MongoCollection[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> rainRawCollection = database.getCollection(COLLECTIONS[8]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:85:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> rainRawCollection = database.getCollection(COLLECTIONS[8]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:86:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class MongoCollection[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> airRawCollection = database.getCollection(COLLECTIONS[10]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:86:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> airRawCollection = database.getCollection(COLLECTIONS[10]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:88:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class MongoCollection[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> tempAggregatedCollection = database.getCollection(COLLECTIONS[1]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:88:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> tempAggregatedCollection = database.getCollection(COLLECTIONS[1]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:89:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class MongoCollection[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> humiAggregatedCollection = database.getCollection(COLLECTIONS[3]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:89:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> humiAggregatedCollection = database.getCollection(COLLECTIONS[3]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:90:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class MongoCollection[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> windSAggregatedCollection = database.getCollection(COLLECTIONS[5]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:90:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> windSAggregatedCollection = database.getCollection(COLLECTIONS[5]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:91:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class MongoCollection[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> windDAggregatedCollection = database.getCollection(COLLECTIONS[7]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:91:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> windDAggregatedCollection = database.getCollection(COLLECTIONS[7]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:92:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class MongoCollection[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> rainAggregatedCollection = database.getCollection(COLLECTIONS[9]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:92:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> rainAggregatedCollection = database.getCollection(COLLECTIONS[9]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:93:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class MongoCollection[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> airAggregatedCollection = database.getCollection(COLLECTIONS[11]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:93:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCollection<Document> airAggregatedCollection = database.getCollection(COLLECTIONS[11]);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:125:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m			Document document = new Document("timestamp", finalTimestamp) // prioritizing. ( i * deltaMillis can exceed 32 bits easily on long periods of time)[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:125:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m			Document document = new Document("timestamp", finalTimestamp) // prioritizing. ( i * deltaMillis can exceed 32 bits easily on long periods of time)[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:135:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m			Document document = new Document("timestamp", finalTimestamp) // prioritizing. ( i * deltaMillis can exceed 32 bits easily on long periods of time)[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:135:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m			Document document = new Document("timestamp", finalTimestamp) // prioritizing. ( i * deltaMillis can exceed 32 bits easily on long periods of time)[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:145:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m			Document document = new Document("timestamp", finalTimestamp) // prioritizing. ( i * deltaMillis can exceed 32 bits easily on long periods of time)[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:145:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m			Document document = new Document("timestamp", finalTimestamp) // prioritizing. ( i * deltaMillis can exceed 32 bits easily on long periods of time)[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:155:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m			Document document = new Document("timestamp", finalTimestamp) // prioritizing. ( i * deltaMillis can exceed 32 bits easily on long periods of time)[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:155:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m			Document document = new Document("timestamp", finalTimestamp) // prioritizing. ( i * deltaMillis can exceed 32 bits easily on long periods of time)[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:165:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m			Document document = new Document("timestamp", finalTimestamp) // prioritizing. ( i * deltaMillis can exceed 32 bits easily on long periods of time)[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:165:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m			Document document = new Document("timestamp", finalTimestamp) // prioritizing. ( i * deltaMillis can exceed 32 bits easily on long periods of time)[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:175:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m			Document document = new Document("timestamp", finalTimestamp) // prioritizing. ( i * deltaMillis can exceed 32 bits easily on long periods of time)[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:175:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m			Document document = new Document("timestamp", finalTimestamp) // prioritizing. ( i * deltaMillis can exceed 32 bits easily on long periods of time)[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:186:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		Document doc = tempRawCollection.find().sort(descending("timestamp")).first();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:186:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method descending(java.lang.String)[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		Document doc = tempRawCollection.find().sort(descending("timestamp")).first();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:209:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class MongoCursor[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCursor<Document> cursor = tempRawCollection.find().sort(descending("timestamp")).iterator();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:209:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Document[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCursor<Document> cursor = tempRawCollection.find().sort(descending("timestamp")).iterator();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wapp/WeatherStationApplication/app/controllers/DataGenerators.java:209:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method descending(java.lang.String)[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.DataGenerators[0m
+[0m[[0m[31merror[0m] [0m[0m		MongoCursor<Document> cursor = tempRawCollection.find().sort(descending("timestamp")).iterator();[0m
